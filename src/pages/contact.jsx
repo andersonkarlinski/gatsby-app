@@ -1,0 +1,53 @@
+import React from 'react'
+import Layout from '../components/Layout'
+import * as Styled from '../styles/pages/contactStyes'
+import Seo from '../components/seo'
+
+const Contact = () => {
+    const text = 'Use essa página para entrar em contato'
+
+    return(
+        <Layout>
+            <Seo
+                title='Contact'
+            />
+            <div className="container">
+                <div className="row">
+                    <div className="col-12 py-4">
+                        <h1>Contato</h1>
+                        <p>{ text }</p>
+                    </div>
+                    <div className="col-md-6 mb-3">
+                        <form>
+                        <div className="form-group">
+                                <input type="text" className="form-control" id="exampleInputName" placeholder="Nome" />
+                            </div>
+                            <div className="form-group">
+                                <input type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
+                            </div>
+                            <div className="form-group">
+                                <textarea className="form-control" id="exampleFormControlTexta" placeholder="Mensagem" rows="3"></textarea>
+                            </div>
+                            <button type="submit" className="btn btn-success">Enviar</button>
+                        </form>
+                    </div>
+                    <div className="col-md-6">
+                        <ul className="list-group">
+                            <li className="list-group-item">
+                                <Styled.EmailWrapper danger/>E-mail
+                            </li>
+                            <li className="list-group-item">
+                                <Styled.PhoneWrapper danger /> Telefone
+                            </li>
+                            <li className="list-group-item">
+                                <Styled.LocationWrapper danger /> Localização
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </Layout>
+    )
+}
+
+export default Contact

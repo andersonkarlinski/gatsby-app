@@ -18,8 +18,9 @@ const Contact = () => {
                         <p>{ text }</p>
                     </div>
                     <div className="col-md-6 mb-3">
-                        <form>
-                        <div className="form-group">
+                        <form name='contact' method='post' data-netlify='true'>
+                            <input type='hidden' name='form-name' value='contact' />
+                            <div className="form-group">
                                 <input type="text" className="form-control" id="exampleInputName" placeholder="Nome" />
                             </div>
                             <div className="form-group">
@@ -34,10 +35,10 @@ const Contact = () => {
                     <div className="col-md-6">
                         <ul className="list-group">
                             <li className="list-group-item">
-                                <Styled.EmailWrapper danger/>E-mail
+                                <Styled.EmailWrapper /> anderson@numai.com.br
                             </li>
                             <li className="list-group-item">
-                                <Styled.PhoneWrapper danger /> Telefone
+                                <Styled.PhoneWrapper danger /> (54) 99184.2588
                             </li>
                             <li className="list-group-item">
                                 <Styled.LocationWrapper danger /> Localização

@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import * as Styled from './styled.js'
 import { useStaticQuery, graphql } from 'gatsby'
 

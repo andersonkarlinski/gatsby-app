@@ -35,10 +35,10 @@ const Contact = () => {
                     <div className="col-md-6">
                         <ul className="list-group">
                             <li className="list-group-item">
-                                <Styled.EmailWrapper /> anderson@numai.com.br
+                                <Styled.EmailWrapper danger/> anderson@numai.com.br
                             </li>
                             <li className="list-group-item">
-                                <Styled.PhoneWrapper danger /> (54) 99184.2588
+                                <Styled.PhoneWrapper danger /> (54) 99184.2588git 
                             </li>
                             <li className="list-group-item">
                                 <Styled.LocationWrapper danger /> Localização
